@@ -74,7 +74,7 @@
                     <li class="nav-item"><a href="index.html">首页</a></li>
                     <li class="nav-item"><a href="advertiserInfo.html">系统公告</a></li>
                     <li class="nav-item"><a href="foodsMenuInfo.html">菜谱</a></li>
-                    <!--<li class="nav-item"><a href="foodsMaterialInfo.html">食材</a></li>-->
+                    <li class="nav-item"><a href="foodsMaterialInfo.html">食材</a></li>
                     <li class="nav-item"><a href="collectInfo.html">收藏</a></li>
                     <li class="nav-item"><a href="notesInfo.html">笔记</a></li>
                     <li class="nav-item"><a href="newsInfo.html">饮食资讯</a></li>
@@ -90,12 +90,11 @@
         <div class="col-md-12">
             <table class="table table-striped table-bordered table-hover">
                 <thead>
-                <tr style="background-color: #cccccc">
+                <tr style="background-color: #f0f2f5">
                     <th style="width: 50px">ID</th>
 					<th>笔记名称</th>
 					<th>上传时间</th>
 					<th>上传人</th>
-
                     <th>详情</th>
                 </tr>
                 </thead>
@@ -105,8 +104,7 @@
 					<td>{{data.name}}</td>
 					<td>{{data.time}}</td>
 					<td>{{data.userName}}</td>
-
-                    <td><a :href=`notesInfoDetail.html?id=${data.id}` target="_blank">详情</a></td>
+                    <td><a style="color: #2681ff;" :href=`notesInfoDetail.html?id=${data.id}`>详情</a></td>
                 </tr>
                 </tbody>
             </table>
