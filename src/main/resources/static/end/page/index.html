@@ -67,6 +67,16 @@
 		.col-md-3{
 			font-size: 16px;
 			line-height: 30px;
+			/* 添加平滑过渡效果 */
+			transition: transform 0.2s ease-in-out;
+		}
+		.col-md-3 img{
+			width: 25px;
+			height: 25px;
+		}
+		.col-md-3:hover {
+			/* 鼠标悬停时放大 */
+			transform: scale(1.06); /* 1.1 表示放大 10% */
 		}
 		/*卡片中字体样式*/
 		.admin-text {
@@ -179,14 +189,16 @@
 			<div class="row">
 				<div class="col-md-3">
 					<div class="main-box mb-red">
+						<img src="../img/管理员认证.png" alt="">
 						<a href="adminInfo.html">
-							<span class="admin-text-0">管理员人数:</span>
+							<span class="admin-text-0">管理员信息:</span>
 							<span id="adminInfo" class="admin-text"></span>
 						</a>
 					</div>
 				</div>
 				<div class="col-md-3">
 					<div class="main-box mb-pink">
+						<img src="../img/用户.png" alt="">
 						<a href="userInfo.html">
 							用户信息：
 							<span id="userInfo" class="admin-text"></span>
@@ -195,6 +207,7 @@
 				</div>
 				<div class="col-md-3">
 					<div class="main-box mb-dull">
+						<img src="../img/餐厅菜谱.png" alt="">
 						<a href="classifyInfo.html">
 							菜谱大类信息：
 							<span id="classifyInfo" class="admin-text"></span>
@@ -203,6 +216,7 @@
 				</div>
 				<div class="col-md-3">
 					<div class="main-box mb-olivedrab">
+						<img src="../img/系统菜谱.png" alt="">
 						<a href="subClassifyInfo.html">
 							菜谱小类信息：
 							<span id="subClassifyInfo" class="admin-text"></span>
@@ -213,6 +227,7 @@
 			<div class="row">
 				<div class="col-md-3">
 					<div class="main-box mb-orchid">
+						<img src="../img/收藏.png" alt="">
 						<a href="collectInfo.html">
 							收藏信息：
 							<span id="collectInfo" class="admin-text"></span>
@@ -221,6 +236,7 @@
 				</div>
 				<div class="col-md-3">
 					<div class="main-box mb-darkcyan">
+						<img src="../img/赞.png" alt="">
 						<a href="praiseInfo.html">
 							笔记点赞信息：
 							<span id="praiseInfo" class="admin-text"></span>
@@ -229,6 +245,7 @@
 				</div>
 				<div class="col-md-3">
 					<div class="main-box mb-darkolivegreen">
+						<img src="../img/菜谱.png" alt="">
 						<a href="newsInfo.html">
 							饮食资讯信息：
 							<span id="newsInfo" class="admin-text"></span>
@@ -237,6 +254,7 @@
 				</div>
 				<div class="col-md-3">
 					<div class="main-box mb-darkseagreen">
+						<img src="../img/公告.png" alt="">
 						<a href="advertiserInfo.html">
 							公告信息：
 							<span id="advertiserInfo" class="admin-text"></span>
@@ -247,6 +265,7 @@
 			<div class="row">
 				<div class="col-md-3">
 					<div class="main-box mb-burlywood">
+						<img src="../img/答题卡.png" alt="">
 						<a href="messageInfo.html">
 							趣味答题信息:
 							<span id="messageInfo" class="admin-text"></span>
