@@ -104,10 +104,10 @@ public class MenuController {
     @GetMapping(value = "/getTotal", produces="application/json;charset=UTF-8")
     public Result<Map<String, Integer>> getTotle() {
         Map<String, Integer> resultMap = new HashMap<>();
+		resultMap.put("subClassifyInfo", subClassifyInfoService.findAll().size());
 		resultMap.put("adminInfo", adminInfoService.findAll().size());
 		resultMap.put("userInfo", userInfoService.findAll().size());
 		resultMap.put("classifyInfo", classifyInfoService.findAll().size());
-		resultMap.put("subClassifyInfo", subClassifyInfoService.findAll().size());
 		resultMap.put("collectInfo", collectInfoService.findAll().size());
 		resultMap.put("praiseInfo", praiseInfoService.findAll().size());
 		resultMap.put("newsInfo", newsInfoService.findAll().size());

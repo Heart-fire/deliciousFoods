@@ -43,9 +43,9 @@ CREATE TABLE `admin_info`  (
 -- ----------------------------
 -- Records of admin_info
 -- ----------------------------
-INSERT INTO `admin_info` VALUES (1, 'admin', 'e10adc3949ba59abbe56e057f20f883e', '管理员', '男', 22, '2020-09-30 11:11:53', '18843232356', '上海市', '111', 'aa@163.com', '342425199001116372', 1, NULL);
-INSERT INTO `admin_info` VALUES (2, 'admin2', 'e10adc3949ba59abbe56e057f20f883e', '管理员', '男', 23, '2020-09-30 11:11:53', '18843232356', '北京市', '222', 'bb@163.com', '342425199001116376', 1, NULL);
-INSERT INTO `admin_info` VALUES (3, 'admin3', 'e10adc3949ba59abbe56e057f20f883e', '管理员', '女', 32, '2020-09-30 11:11:53', '18843232356', '合肥市', '333', 'cc@163.com', '342425199001116323', 1, NULL);
+INSERT INTO `admin_info` VALUES (1, 'admin', 'e10adc3949ba59abbe56e057f20f883e', '管理员', '男', 22, ' 11:11:53', '18843232356', '上海市', '111', 'aa@163.com', '342425199001116372', 1, NULL);
+INSERT INTO `admin_info` VALUES (2, 'admin2', 'e10adc3949ba59abbe56e057f20f883e', '管理员', '男', 23, ' 11:11:53', '18843232356', '北京市', '222', 'bb@163.com', '342425199001116376', 1, NULL);
+INSERT INTO `admin_info` VALUES (3, 'admin3', 'e10adc3949ba59abbe56e057f20f883e', '管理员', '女', 32, ' 11:11:53', '18843232356', '合肥市', '333', 'cc@163.com', '342425199001116323', 1, NULL);
 INSERT INTO `admin_info` VALUES (4, 'admin4', 'e10adc3949ba59abbe56e057f20f883e', '管理员', '女', 24, '2020-09-30 11:11:53', '18843232356', '北京市', '444', 'hahaha@126.com', '342425199001116837', 1, NULL);
 INSERT INTO `admin_info` VALUES (5, 'admin5', 'e10adc3949ba59abbe56e057f20f883e', '管理员', '男', 25, '2020-09-30 11:11:53', '18843232356', '合肥市', '555', 'hello@126.com', '342425199001116309', 1, NULL);
 INSERT INTO `admin_info` VALUES (6, 'admin6', 'e10adc3949ba59abbe56e057f20f883e', '管理员', '男', 26, '2020-09-30 11:11:53', '18843232356', '北京市', '666', '1212@qq.com', '342425199001116984', 1, NULL);

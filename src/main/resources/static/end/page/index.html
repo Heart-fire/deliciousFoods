@@ -301,7 +301,7 @@
             echartsModelOptions: [],
             echartsModel: '',
             echartsShowArr: [],
-            echartsType: 'pie'
+            echartsType: 'bar'
         },
         created: function () {
             axios.get('/echarts/options').then(res => {
@@ -321,10 +321,10 @@
             axios.get("/getTotal").then(res => {
                 if (res.data.code === '0') {
                     let map = res.data.data;
+					$("#subClassifyInfo").text(map['subClassifyInfo']);
 					$("#adminInfo").text(map['adminInfo']);
 					$("#userInfo").text(map['userInfo']);
 					$("#classifyInfo").text(map['classifyInfo']);
-					$("#subClassifyInfo").text(map['subClassifyInfo']);
 					$("#collectInfo").text(map['collectInfo']);
 					$("#praiseInfo").text(map['praiseInfo']);
 					$("#newsInfo").text(map['newsInfo']);
