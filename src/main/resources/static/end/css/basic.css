@@ -51,7 +51,6 @@ body {
     font-size: 14px;
     padding-top: 5px;
     padding-bottom: 20px;
-    font-style: italic;
     margin-bottom: 30px;
     border-bottom: 1px dashed #00CA79;
 
@@ -65,7 +64,7 @@ body {
 
 .navbar-cls-top .navbar-brand {
     color: #fff;
-    background: #20222A;
+    background: #001529;
     width: 260px;
     text-align: center;
     height: 75px;
@@ -114,7 +113,8 @@ body {
 }
 
 .active-menu {
-    background-color: #1b6d85 !important;
+    background-color: #1677ff !important;
+    border-radius: 8px;
 }
 
 .active-menu-top {
@@ -158,10 +158,10 @@ body {
 
 .sidebar-collapse .nav > li > a {
     color: #fff;
-    background: #20222a;
+    background: #001529;
     text-shadow: none;
     padding: 15px 40px;
-    border-bottom: 1px solid #20222a;
+    border-bottom: 1px solid #001529;
 }
 
 .sidebar-collapse > .nav > li > a {

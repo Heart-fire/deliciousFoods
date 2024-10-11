@@ -15,7 +15,7 @@
     <link href="../css/basic.css" rel="stylesheet"/>
     <link href="../css/custom.css" rel="stylesheet"/>
     <link href="../css/element/index.css" rel="stylesheet"/>
-
+    <link href="//unpkg.com/layui@2.9.17/dist/css/layui.css" rel="stylesheet">
     <style>
         [v-cloak] {
             display: none;
@@ -25,13 +25,25 @@
             background-color: #F7F7F7;
             border-color: #eeeeee;
         }
+        .btn-primary {
+            color: #fff;
+            background-color: #1677FF;
+            border: none; /* 如果需要移除边框 */
+            outline: none; /* 默认情况下移除outline */
+        }
+
+        .btn-primary:focus,
+        .btn-primary:active {
+            outline: none; /* 点击或聚焦时移除outline */
+            box-shadow: none; /* 如果有阴影效果，也可以去掉 */
+        }
     </style>
 </head>
 <body>
 <div id="wrapper" v-cloak>
     <nav class="navbar navbar-default navbar-cls-top " role="navigation" style="margin-bottom: 0">
         <div class="navbar-header">
-            <a class="navbar-brand" href="index.html">后端管理系统</a>
+            <a class="navbar-brand" href="index.html">美食菜谱工作台</a>
         </div>
 
         <div class="header-right">
@@ -46,7 +58,7 @@
             </a>
         </div>
 
-        <div class="header-right" style="padding-top: 25px">欢迎你，{{ user.name }}</div>
+        <div class="header-right" style="padding-top: 25px">欢迎您，{{ user.name }}</div>
 
         <div class="header-left">
             <a href="/front/index.html" class="btn btn-info" title="跳转到首页">
@@ -122,7 +134,7 @@
         <div id="page-inner">
             <div class="row">
                 <div class="col-md-12">
-                    <h1 class="page-subhead-line">这是管理员信息页，管理员可以对管理员信息进行操作。 </h1>
+                    <h1 class="page-subhead-line">这是管理员信息页，管理员可以对管理员信息进行操作。🎊 </h1>
                 </div>
             </div>
 
@@ -166,7 +178,13 @@
                                         <td>{{obj.id}}</td>
 										<td>{{obj.name}}</td>
 										<td>{{obj.nickName}}</td>
-										<td>{{obj.sex}}</td>
+                                        <td>
+                                            <button
+                                                    style="border: none"
+                                                    :class="['layui-btn', 'layui-btn-primary', 'layui-btn-sm', obj.sex === '男' ? 'layui-bg-blue' : 'layui-bg-red']">
+                                                {{ obj.sex === '男' ? '男' : '女' }}
+                                            </button>
+                                        </td>
 										<td>{{obj.age}}</td>
 										<td>{{obj.birthday}}</td>
 										<td>{{obj.phone}}</td>

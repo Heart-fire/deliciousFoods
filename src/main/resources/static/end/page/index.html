@@ -88,14 +88,37 @@
 		}
 		.admin-text-0 {
 		}
-    </style>
+		.btn-info {
+			color: #fff;
+			background-color: #1677FF;
+			border: none;
+			outline: none;
+		}
+		/*管理员您好 的提示样式*/
+		.q {
+			margin-top: 12px;
+			display: flex;         /* 使用 flexbox 布局 */
+			flex-direction: column; /* 设置为垂直方向排列 */
+		}
+		.greeting {
+			color: #141414;
+			font-size: 20px; /* 第一行字体大小 */
+			font-weight: normal; /* 可选：加粗 */
+		}
+
+		.weather {
+			font-size: 14px; /* 第二行字体大小 */
+			color: #a3a3a3; /* 可选：设置颜色，较浅的颜色更适合天气信息 */
+		}
+
+	</style>
 </head>
 
 <body>
 <div id="wrapper" v-cloak>
     <nav class="navbar navbar-default navbar-cls-top " role="navigation" style="margin-bottom: 0">
         <div class="navbar-header">
-            <a class="navbar-brand" href="index.html">后端管理系统</a>
+            <a class="navbar-brand" href="index.html">美食菜谱工作台✨</a>
         </div>
 
         <div class="header-right">
@@ -117,6 +140,12 @@
                 <i class="fa fa-dot-circle-o fa-2x"></i>
             </a>
         </div>
+
+		<div class="q">
+			<span class="greeting">您好管理员，请开始您一天的工作吧！</span>
+			<span class="weather">🔊今日多云转阴, 18℃ ~ 22℃, 出门记得穿外套哦~</span>
+		</div>
+
     </nav>
     <!-- /. NAV TOP  -->
     <nav class="navbar-default navbar-side" role="navigation">

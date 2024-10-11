@@ -15,10 +15,14 @@
     <link href="../css/basic.css" rel="stylesheet"/>
     <link href="../css/custom.css" rel="stylesheet"/>
     <link href="../css/element/index.css" rel="stylesheet"/>
-
+    <link href="//unpkg.com/layui@2.9.17/dist/css/layui.css" rel="stylesheet">
     <style>
         [v-cloak] {
             display: none;
+        }
+        .btn-primary {
+            color: #fff;
+            background-color: #1677FF;
         }
     </style>
 </head>
@@ -26,7 +30,7 @@
 <div id="wrapper" v-cloak>
     <nav class="navbar navbar-default navbar-cls-top " role="navigation" style="margin-bottom: 0">
         <div class="navbar-header">
-            <a class="navbar-brand" href="index.html">后端管理系统</a>
+            <a class="navbar-brand" href="index.html">美食菜谱工作台✨</a>
         </div>
 
         <div class="header-right">
@@ -41,7 +45,7 @@
             </a>
         </div>
 
-        <div class="header-right" style="padding-top: 25px">欢迎你，{{ user.name }}</div>
+        <div class="header-right" style="padding-top: 25px">欢迎您，{{ user.name }}</div>
 
         <div class="header-left">
             <a href="/front/index.html" class="btn btn-info" title="跳转到首页">
@@ -160,7 +164,13 @@
                                         <td>{{obj.id}}</td>
 										<td>{{obj.name}}</td>
 										<td>{{obj.nickName}}</td>
-										<td>{{obj.sex}}</td>
+                                        <td>
+                                            <button
+                                                    style="border: none"
+                                                    :class="['layui-btn', 'layui-btn-primary', 'layui-btn-sm', obj.sex === '男' ? 'layui-bg-blue' : 'layui-bg-red']">
+                                                {{ obj.sex === '男' ? '男' : '女' }}
+                                            </button>
+                                        </td>
 										<td>{{obj.age}}</td>
 										<td>{{obj.birthday}}</td>
 										<td>{{obj.phone}}</td>
