@@ -5,7 +5,7 @@ spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
-    password: abcde
+    password: abcde # 数据库密码换成自己本地的密码
     url: jdbc:mysql://localhost:3306/deliciousfoods?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2b8
   thymeleaf:
     cache: false #关闭缓存
